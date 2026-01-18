@@ -46,25 +46,25 @@ android {
 }
 
 dependencies {
-    // --- HILT (Inyección de dependencias) ---
+
     implementation("com.google.dagger:hilt-android:2.51.1")
     implementation(libs.androidx.runtime)
     kapt("com.google.dagger:hilt-compiler:2.51.1")
 
-    // --- ROOM DATABASE ---
+
     val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
 
-    // --- SUPABASE & KTOR ---
+
     val supabase_v = "3.0.1"
     implementation("io.github.jan-tennert.supabase:postgrest-kt:$supabase_v")
     implementation("io.github.jan-tennert.supabase:auth-kt:$supabase_v")
     implementation("io.github.jan-tennert.supabase:storage-kt:$supabase_v")
     implementation("io.ktor:ktor-client-android:2.3.12")
 
-    // --- ANDROID CORE ---
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -74,31 +74,30 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.8.5")
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    // --- TESTING ---
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    val supabase_version = "3.0.2" // O la versión que estés usando
+    val supabase_version = "3.0.2"
     implementation("io.github.jan-tennert.supabase:postgrest-kt:$supabase_version")
 
-    // Motor de red Ktor (Esto es lo que falta y causa el error)
+
     implementation("io.ktor:ktor-client-android:3.0.1")
     implementation("io.ktor:ktor-client-core:3.0.1")
     implementation("com.google.android.material:material:1.11.0")
 
-    // --- COMPOSE ---
-    // Esta librería quita el rojo de 'foundation' y 'layout'
+
     implementation("androidx.compose.foundation:foundation:1.5.0")
     implementation("androidx.compose.ui:ui:1.5.0")
 
-    // Esta librería quita el rojo de 'MaterialTheme', 'Text' y 'Button'
+
     implementation("androidx.compose.material3:material3:1.1.0")
 
-    // Esta librería quita el rojo de 'AsyncImage' (Coil)
+
     implementation("io.coil-kt:coil-compose:2.4.0")
 
-    // Herramientas de vista previa
+
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.0")
     debugImplementation("androidx.compose.ui:ui-tooling:1.5.0")
     implementation("androidx.activity:activity-compose:1.8.0")
