@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pet App</string>
+    <string name="welcome">Welcome!</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log In</string>
+    <string name="no_account">Don\'t have an account? Register</string>
+
+    <string name="reg_title">Create your account</string>
+    <string name="reg_name">Name</string>
+    <string name="reg_surname">Surname</string>
+    <string name="reg_pet_name">Pet\'s Name</string>
+    <string name="action_register">CREATE ACCOUNT</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="logout">Log Out</string>
+    <string name="personality">PERSONALITY</string>
+    <string name="habits">HABITS &amp; TASTES</string>
+    <string name="traits">PHYSICAL TRAITS</string>
+    <string name="gallery">PHOTO GALLERY</string>
+    <string name="back">BACK</string>
+    <string name="login_error">Invalid credentials</string>
+    <string name="reg_pet_type">What kind of pet is it?</string>
+    <string name="label_owner">Owner</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="no_data">No data specified</string>
+    <string name="loading">Loading...</string>
+    <string name="home_default_pet">Pet</string>
+    <string name="search_empty">No pets found</string>
+    <string name="search_hint">Search pet (dog, cat...)</string>
+    <string name="like_description">Give like</string>
+    <string name="like">Unlike</string>
+    <string name="liked">Like</string>
+    <string-array name="tipos_mascotas">
+        <item>Cat</item>
+        <item>Dog</item>
+        <item>Bird</item>
+    </string-array>
+</resources>
